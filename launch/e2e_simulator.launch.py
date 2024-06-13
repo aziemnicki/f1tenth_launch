@@ -63,7 +63,7 @@ def generate_launch_description():
     add_launch_arg('sensor_model', 'f1tenth_sensor_kit')
     add_launch_arg('map_path', PathJoinSubstitution([EnvironmentVariable('HOME'), 'autoware_map/race_track_01']))
     add_launch_arg('mapping', 'false')
-    add_launch_arg('use_trajectory_loader', 'true')
+    add_launch_arg('use_trajectory_loader', 'false')
 
     return LaunchDescription([
         *declared_arguments,
